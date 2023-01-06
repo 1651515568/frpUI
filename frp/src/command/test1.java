@@ -16,7 +16,7 @@ public class test1 {
                     String input = sc.nextLine();
                     if(input.contains("proxy")){
                         String[] cmd = input.split(" ");
-                        threadOpen("101.34.164.131:7000",cmd[1],cmd[2],cmd[3]);
+                        threadOpen("x.x.x.x:7000",cmd[1],cmd[2],cmd[3]);
                     }else if(input.contains("socket")){
                         System.out.println("no fun");
                     }else if(input.contains("exit")){
@@ -33,9 +33,9 @@ public class test1 {
 
         }
 
-//        threadOpen("101.34.164.131:7000","mc","25565","6666");
-//        threadOpen("101.34.164.131:7000","ww","2555","6667");
-//        threadOpen("101.34.164.131:7000","ww1","255","6668");
+//        threadOpen("x.x.x.x:7000","mc","25565","6666");
+//        threadOpen("x.x.x.x:7000","ww","2555","6667");
+//        threadOpen("x.x.x.x:7000","ww1","255","6668");
     }
     public static void threadOpen(String vps,String name,String localPort,String remotePort){
         String cmd = String.format("C:\\Users\\lz\\Desktop\\frp_0.46.0_windows_amd64\\frpc.exe tcp -s %s -n %s  -l %s -r %s",vps,name,localPort,remotePort);

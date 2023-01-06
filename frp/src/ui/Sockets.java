@@ -25,7 +25,7 @@ public class Sockets{
     }
     public Sockets(Home home) {
         configPath = "C:\\Users\\lz\\Desktop\\frp_0.46.0_windows_amd64";
-        vps = "101.34.164.131";
+        vps = "x.x.x.x";
         setSocketsPanel(new JPanel());
 //        getSocketsPanel().setBackground(Color.yellow);
         getSocketsPanel().setBounds(0,35,360,533);

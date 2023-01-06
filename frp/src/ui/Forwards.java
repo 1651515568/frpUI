@@ -75,7 +75,7 @@ public class Forwards {
     }
     public static void threadOpen(JTextField name,JTextField local,JTextField remote,JTextArea forward,JTextArea inter){
         String theName = name.getText();
-        String vps = "101.34.164.131:7000";
+        String vps = "x.x.x.x:7000";
         String localPort = local.getText();
         String remotePort = remote.getText();
 //        String cmd = String.format("C:\\Users\\lz\\Desktop\\frp_0.46.0_windows_amd64\\frpc.exe tcp -s %s -n %s  -l %s -r %s",vps,theName,localPort,remotePort);
